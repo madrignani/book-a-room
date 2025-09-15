@@ -1,6 +1,6 @@
-# Acme
+# Book a Room
 
-Esse sistema web visa controlar as reservas dos espaços físicos da universidade ACME. Permite que alunos e funcionários realizem o agendamento de salas. Ele faz parte do trabalho final da disciplina **Projeto integrador** do curso **Bacharelado de Sistemas de Informação** do **CEFET/RJ**.
+Esse sistema web visa controlar as reservas dos espaços físicos da universidade. Permite que alunos e funcionários realizem o agendamento de salas. Ele faz parte do trabalho final da disciplina **Projeto integrador** do curso **Bacharelado de Sistemas de Informação** do **CEFET/RJ**.
 
 ## Autor
 
