@@ -1,0 +1,28 @@
+Cenário 01: Lista todas as reservas
+    Dado que sou um usuário logado
+    Quando carrego a página de listagem de reservas
+    Então é exibida a tabela com todas as reservas
+
+
+Cenário 02: Filtra as reservas da listagem por tipo de espaço
+    Dado que sou um usuário logado
+    Quando informo um tipo de espaço no campo de busca
+    Então somentes as reservas feitas para o espaço vinculado aquele tipo de espaço são listadas
+
+
+Cenário 03: Filtra as reservas da listagem por sala
+    Dado que sou um usuário logado
+    Quando informo um código de sala no campo de busca
+    Então somente as reservas feitas para o espaço com aquele código de sala são listadas
+
+
+Cenário 04: Filtra as reservas da listagem por usuário
+    Dado que sou um usuário logado
+    Quando informo um nome de usuário no campo de busca
+    Então somente as reservas feitas por aquele usuário são listadas
+
+
+Cenário 05: Filtra as reservas da listagem por status
+    Dado que sou um usuário logado
+    Quando informo um estado de reserva, 'MARCADA' ou 'CANCELADA'
+    Então somente as reservas naquele estado são listadas

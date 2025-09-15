@@ -1,0 +1,23 @@
+# Arquivos do editor
+.vscode/*
+
+
+# Arquivos de configuração do ambiente
+front/node_modules
+front/playwright.config.ts
+front/pnpm-lock.yaml
+front/pnpm-workspace.yaml
+front/tsconfig.json
+front/src/vite-env.d.ts
+back/vendor
+back/composer.lock
+
+
+# Arquivos gerados por testes
+front/test-results
+front/e2e/.auth
+
+
+# Arquivos com variáveis de ambiente
+back/.env
+front/.env

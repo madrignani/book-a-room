@@ -1,0 +1,29 @@
+{
+  "name": "acme",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Sistema implementado para o Trabalho Final de Projeto Integrador",
+  "keywords": [],
+  "author": "Giovanni de Oliveira Madrignani",
+  "license": "ISC",
+  "packageManager": "pnpm@10.11.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "vitest run --dir test",
+    "e2e": "playwright test",
+    "start": "vite"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.53.2",
+    "@types/node": "^24.0.15",
+    "bootstrap": "^5.3.7",
+    "dotenv": "^17.2.0",
+    "mysql2": "^3.14.2",
+    "playwright": "^1.53.2",
+    "typescript": "~5.8.3",
+    "vite": "^7.0.0",
+    "vitest": "^3.2.4"
+  }
+}

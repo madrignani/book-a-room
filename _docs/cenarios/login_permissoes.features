@@ -1,0 +1,40 @@
+Cenário 01: Login no sistema
+    Dado que sou um usuário não logado
+    Quando acesso o login no sistema e informo os meus dados (e-mail/matrícula + senha) corretamente
+    Então o sistema me dá acesso às funcionalidades permitidas para meu cargo
+
+
+Cenário 02: Reserva para Aluno
+    Dado que sou um usuário do tipo 'ALUNO'
+    Quando vou cadastrar uma reserva
+    Então o sistema só me permite de reservar Espaços do Tipo 'Sala de Reunião', por no máx 2h
+
+
+Cenário 03: Reserva para Funcionario (não Professor) sem cargo de Gestão
+    Dado que sou um usuário do tipo 'FUNCIONARIO', não sou um Professor e não possuo cargo de Gestão
+    Quando vou cadastrar uma reserva
+    Então o sistema só me permite de reservar Espaços do Tipo 'Sala de Reunião', por no máx 5h
+
+
+Cenário 04: Reserva para Funcionario (Professor) sem cargo de Gestão
+    Dado que sou um usuário do tipo 'FUNCIONARIO', sou um Professor e não possuo cargo de Gestão
+    Quando vou cadastrar uma reserva
+    Então o sistema me permite de reservar Espaços de qualquer Tipo, por no máx 5h
+
+
+Cenário 05: Reserva para Funcionario com cargo de Gestão
+    Dado que sou um usuário do tipo 'FUNCIONARIO' e possuo cargo de Gestão
+    Quando vou cadastrar uma reserva
+    Então o sistema me permite de reservar Espaços de qualquer Tipo, sem limite de tempo
+
+
+Cenário 06: Cancela reserva contida na Listagem (Usuário da Reserva)
+    Dado que sou um usuário logado
+    Quando clico em 'CANCELAR' em uma Reserva listada ativa, vinculada a mim
+    Então, essa Reserva deve ser cancelada
+
+
+Cenário 07: Cancela reserva contida na listagem (Usuário Gestor)
+    Dado que sou um usuário logado, sou 'FUNCIONARIO' e possuo cargo de Gestão
+    Quando clico em 'CANCELAR' em uma Reserva listada ativa, qualquer que seja ela
+    Então, essa Reserva deve ser cancelada

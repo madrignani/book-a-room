@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="./src/visao/listagem_reserva.ts" type="module" defer></script>
+        <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="./estilo/estilo_index.css">
+        <title>ACME - Página inicial</title>
+    </head>
+    <body>
+        <header>
+            <a href="./cadastro_reserva.html" class="btn btn-link">CADASTRO</a>
+            <a href="./index.html" class="btn btn-link">RESERVAS</a>
+            <div id="identificacaoUsuario"></div>
+            <button id="botaoLogout" type="button" class="btn btn-danger">LOGOUT</button>
+        </header>
+        <h1>LISTAGEM DE RESERVAS</h1>
+        <p>
+            Caso as datas de início ou fim não forem informadas, 
+            a listagem exibirá os dados da semana atual (domingo mais recente até sábado).
+        </p>
+        <div>
+            <label for="dataInicio">Data de início: </label>
+            <input type="date" id="dataInicio" class="form-control">
+            <label for="dataFim">Data de fim: </label>
+            <input type="date" id="dataFim" class="form-control">
+            <label>Estado: </label>
+            <label><input type="radio" name="estado" value="MARCADA" checked> Marcada</label>
+            <label><input type="radio" name="estado" value="CANCELADA"> Cancelada</label>
+        </div>
+        <div>
+            <label for="filtroExtra">Filtrar: </label>
+            <select id="filtroExtra" class="form-control">
+                <option value="">Nenhum</option>
+                <option value="tipoEspaco">Tipo de Espaço</option>
+                <option value="codigoSala">Código de Sala</option>
+                <option value="matriculaUsuario">Matrícula de Usuário</option>
+            </select>
+            <div id="campoTipoEspaco">
+                <label for="tipoEspaco">Tipo: </label>
+                <select id="tipoEspaco" class="form-control"></select>
+            </div>
+            <div id="campoCodigoSala">
+                <label for="codigoSala">Código: </label>
+                <input type="text" id="codigoSala" class="form-control">
+            </div>
+            <div id="campoMatriculaUsuario">
+                <label for="matriculaUsuario">Matrícula: </label>
+                <input type="text" id="matriculaUsuario" class="form-control">
+            </div>
+        </div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Espaço</th>
+                    <th>Dia</th>
+                    <th>Início</th>
+                    <th>Término</th>
+                    <th>Pessoa</th>
+                    <th>Justificativa</th>
+                    <th>Ação</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </body>
+</html>

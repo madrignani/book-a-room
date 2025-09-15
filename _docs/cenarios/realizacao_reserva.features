@@ -1,0 +1,28 @@
+Cenário 01: Lista os Tipos de Espaço
+    Dado que sou um usuário logado
+    Quando informo um nome de Tipo de Espaço para o cadastro da reserva
+    Então o Tipo de Espaço registrado no sistema com aquele nome deverá ser exibido
+
+
+Cenário 02: Lista os Espaços conforme seus tipos
+    Dado que sou um usuário logado
+    Quando já escolhi um Tipo de Espaço
+    Então somente os Espaços vinculados ao Tipo de Espaço informado deverão ser exibidos
+
+
+Cenário 03: Permite a seleção de data/hora de início e fim
+    Dado que sou um usuário logado
+    Quando vou preencher os dados para a reserva
+    Então posso escolher uma data/hora de início e fim
+
+
+Cenário 04: Permite a adição de uma justificativa para reserva
+    Dado que sou um usuário logado
+    Quando vou preencher os dados para a reserva
+    Então posso inserir uma justificativa de até 200 caracteres
+
+
+Cenário 05: Seleciona o usuário logado como realizador da reserva
+    Dado que sou um usuário logado
+    Quando decido cadastrar uma reserva com os dados devidamente informados
+    Então esta reserva é atribuída a mim

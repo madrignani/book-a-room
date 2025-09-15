@@ -1,0 +1,30 @@
+{   
+    
+    "name": "acme/back",
+    "description": "API do projeto Acme (TF de Integrador de Sistemas)",
+    "version": "0.1.0",
+    "type": "project",
+    "license": "ISC",
+    "author": "Giovanni de Oliveira Madrignani",
+    "minimum-stability": "dev", 
+
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+
+    "scripts": {
+        "test": "kahlan --spec=test",
+        "dump": "composer dump-autoload"
+    },
+
+    "require": {
+        "phputil/router": "dev-main",
+        "phputil/cors": "dev-main"
+    },
+    "require-dev": {
+        "kahlan/kahlan": "^6.0"
+    }
+
+}

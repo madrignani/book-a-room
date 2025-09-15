@@ -1,0 +1,142 @@
+@font-face {
+    font-family: 'Merriweather';
+    src: url('./fontes/Merriweather-VariableFont_opsz,wdth,wght.ttf') format('truetype');
+    font-weight: 300 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    font-family: 'Merriweather', serif;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+    padding: 80px;
+    background-color: white;
+}
+
+header {
+    padding: 0;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+header .btn {
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 6px;
+    font-weight: 900;
+}
+
+header .btn-link {
+    background-color: rgb(18, 37, 96);
+    color: #ffffff;
+}
+
+header .btn-link:hover {
+    background-color: rgb(30, 60, 150);
+    color: #ffffff;
+}
+
+
+header .btn-danger {
+    background-color: rgb(18, 37, 96);
+    color: white;
+    border-color: rgb(18, 37, 96);
+    margin-left: auto;
+}
+
+header .btn-danger:hover {
+    background-color: #000000;
+}
+
+#identificacaoUsuario {
+    font-weight: 600;
+    color: #000000;
+    margin-left: auto;
+    margin-right: 190px;
+}
+
+h1 {
+    color: #000000;
+    font-size: 40px;
+    font-weight: 900;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    color: #2d2d2d;
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+div {
+    padding: 05px;
+    margin-bottom: 10px;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #000000;
+}
+
+.form-control {
+    width: 100%;
+    max-width: 250px;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+.form-control:focus {
+    border-color: #000000;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+input[type="radio"] {
+    margin-right: 8px;
+    margin-left: 20px;
+}
+
+#campoTipoEspaco, #campoCodigoSala, #campoMatriculaUsuario {
+    padding: 0;
+    margin: 15px 0;
+    box-shadow: none;
+    display: inline-block;
+}
+
+.table {
+    background-color: white;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.table th {
+    background-color: #fff4c6;
+    font-weight: 800;
+    color: #000000;
+    padding: 18px 15px;
+    border-bottom: 2px solid #dee2e6;
+    text-align: left;
+}
+
+.table td {
+    padding: 15px;
+    vertical-align: middle;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.espacoMarcado {
+    border: 2px solid #000000; 
+}

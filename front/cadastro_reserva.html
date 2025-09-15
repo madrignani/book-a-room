@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="./src/visao/cadastro_reserva.ts" type="module" defer></script>
+        <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="./estilo/estilo_cadastro_reserva.css">
+        <title>ACME - Cadastrar Reserva</title>
+    </head>
+    <body>
+        <header>
+            <a href="./cadastro_reserva.html" class="btn btn-link">CADASTRO</a>
+            <a href="./index.html" class="btn btn-link">RESERVAS</a>
+            <div id="identificacaoUsuario"></div>
+            <button id="botaoLogout" type="button" class="btn btn-danger">LOGOUT</button>
+        </header>
+        <h1>CADASTRAR RESERVA</h1>
+        <form>
+            <div class="row">
+                <div class="col-md-4 form-group mb-3">
+                    <label for="tipoEspaco">Tipo de Espaço: </label>
+                    <select id="tipoEspaco" class="form-control"></select>
+                </div>
+                <div class="col-md-4 form-group mb-3">
+                    <label for="dia">Dia: </label>
+                    <input id="dia" type="date" class="form-control" required>
+                </div>
+                <div class="col-md-4 form-group mb-3">
+                    <label for="horaInicio">Hora de Início:</label>
+                    <input id="horaInicio" type="time" class="form-control" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 form-group mb-3">
+                    <label for="horaFim">Hora de Fim: </label>
+                    <input id="horaFim" type="time" class="form-control" required>
+                </div>
+                <div class="col-md-8 form-group mb-3">
+                    <label for="justificativa">Justificativa: </label>
+                    <textarea id="justificativa" class="form-control"></textarea>
+                </div>
+            </div>
+            <button id="botaoReservar" type="submit" class="btn btn-primary">Reservar</button>
+        </form>
+        <div id="espacos" class="mt-5">
+            <h2>Espaços</h2>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Código</th>
+                        <th>Nome</th>
+                        <th>Ação</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </body>
+</html>
